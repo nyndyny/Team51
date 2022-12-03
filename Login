@@ -1,0 +1,88 @@
+#include <iostream>
+#include <map>
+#include <vector>
+using namespace std;
+
+int main() {
+    string userResponse;
+    string userName;
+    string passWord;
+    vector<string> pairs;
+    vector<vector<string>> userLoginInfo;
+    bool successful = false;
+
+    cout<< "Welcome to Crime Fighters!" << endl;
+    cout<< "Do you already have an account set up with us?" << endl;
+    cout << "Yes or No: ";
+    cin >> userResponse;
+    if (userResponse == "Yes"){
+        if(userLoginInfo.empty()){//USER IS FORCED CREATE LOGIN INFO BECAUSE NOTHING IS SAVED
+            cout << "There is no saved information within our database at this time. Please create a username and password." << endl;
+            cout << "Username: ";
+            cin >> userName;
+            cout << "Password: ";
+            cin >> passWord;
+            while(passWord.length() < 8){
+                cout << "The password you have entered is less than 8 characters! Please re-enter. " << endl;
+                cout << "Password: ";
+                cin >> passWord;
+            }
+            pairs.push_back(userName);
+            pairs.push_back(passWord);
+            userLoginInfo.push_back(pairs);
+            pairs.clear();
+            successful = true;
+        } else {
+            cout << "Great! Please sign in." << endl;
+            while (successful == false) {
+                cout << "Username: ";
+                cin >> userName;
+                cout << "Password: ";
+                cin >> passWord;
+
+                for (int i = 0; i < userLoginInfo.size(); i++) {
+                    if (userName == userLoginInfo[0].at(0)) {
+                        if (passWord == userLoginInfo[0].at(1)) {
+                            successful = true;
+                        }
+                    }
+                }
+                if(successful == false){
+                    cout << "Incorrect login information. Try again." << endl;
+                }
+            }
+        }
+
+
+    } else if (userResponse == "No"){
+        cout << "Don't worry! Let's get you signed up." << endl;
+        cout << "Input New Username: ";
+        cin >> userName;
+        cout << "Input New Password: ";
+        cin >> passWord;
+        while(passWord.length() < 8){
+            cout << "The password you have entered is less than 8 characters! Please re-enter. " << endl;
+            cout << "Password: ";
+            cin >> passWord;
+        }
+        pairs.push_back(userName);
+        pairs.push_back(passWord);
+        userLoginInfo.push_back(pairs);
+        pairs.clear();
+        successful = true;
+    }
+
+    if(successful == true){
+        cout << "Login Successful!!!" << endl;
+        cout << "~~~~~~MENU OPTIONS~~~~~~" << endl;
+        cout << "1. Statistics " << endl;
+        cout << "2. Crime " << endl;
+        cout << "3. Demographics " << endl;
+        cout << "4. Time " << endl;
+        cout << "5. State " << endl;
+        cout << "6. Exit/Log Out " << endl;
+
+    }
+
+    return 0;
+}
