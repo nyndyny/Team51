@@ -1,0 +1,50 @@
+Alabama,8PM,10PM
+Alaska,6AM,7AM
+Arizona,5PM,8PM
+Arkansas,3PM,4PM
+California,11PM,3AM
+Colorado,7PM,9PM
+Connecticut,6PM,8PM
+Delaware,4PM,7PM
+Florida,11PM,4AM
+Georgia,12PM,1AM
+Hawaii,4AM,5AM
+Idaho,10AM,1PM
+Illinois,3AM,6AM
+Indiana,2PM,4PM
+Iowa,3PM,4PM
+Kansas,9AM,10AM
+Kentucky,8AM,9AM
+Louisiana,5AM,7AM
+Maine,3PM,5PM
+Maryland,8PM,9PM
+Massachusetts,10PM,2AM
+Michigan,7PM,11PM
+Minnesota,8AM,10AM
+Mississippi,3PM,4PM
+Missouri,1PM,4PM
+Montana,11AM,2PM
+Nebraska,1PM,2PM
+Nevada,5PM,4AM
+New Hampshire,6PM,8PM
+New Jersey,3PM,2AM
+New Mexico,11PM,4AM
+New York,11PM,5AM
+North Carolina,9AM,12PM
+North Dakota,7PM,8PM
+Ohio,4PM,4AM
+Oklahoma,5PM,7PM
+Oregon,12PM,3PM
+Pennsylvania,9PM,12PM
+Rhode Island,10PM,1AM
+South Carolina,8PM,10PM
+South Dakota,4AM,5AM
+Tennessee,6PM,4AM
+Texas,8PM,2AM
+Utah,4PM,8PM
+Vermont,5AM,8AM
+Virginia,3PM,9PM
+Washington,1AM,4AM
+West Virginia,9PM,2AM
+Wisconsin,8PM,11PM
+Wyoming,2PM,6PM
