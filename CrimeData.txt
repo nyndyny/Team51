@@ -36,7 +36,7 @@ Ohio,Burglary,Theft,Sex-Offense
 Oklahoma,Theft,Assualt,Burglary
 Oregon,Burglary,Property-Crime,Assualt
 Pennsylvania,Assualt,Violent-Crime,Homicide
-Rhode Island,Property-Crime,Theft
+Rhode Island,Property-Crime,Theft,Assault
 South Carolina,Violent-Crime,Theft,Sex-Offense
 South Dakota,Theft,Burglary,Violent-Crime
 Tennessee,Property-Crime,Assualt,Burglary
