@@ -9,12 +9,12 @@
 using namespace std;
 
 int main() {
-    string userResponse;
-    string userName;
-    string passWord;
+    string userResponse;//input for login verification
+    string userName;//input username from user
+    string passWord;//input password from user
     vector<string> pairs;
-    vector<vector<string>> userLoginInfo; //maybe hashmaps
-    bool successful = false;
+    vector<vector<string>> userLoginInfo; //saved login information(username, password)
+    bool successful = false;//login successful or not
 
     // Open a text file
     ifstream MyFile("StatisticsData.txt");
@@ -37,7 +37,7 @@ int main() {
     vector<string> crimeType1;
     vector<string> crimeType2;
     vector<string> crimeType3;
-    while(getline(MyFile2, temp, ','))
+    while(getline(MyFile2, temp, ','))//getting each like on data and saving into separate variables
     {
         State.push_back(temp);
         getline(MyFile2, temp, ',');
@@ -49,7 +49,8 @@ int main() {
     }
 
     MyFile2.close();
-//Open statedata file
+
+    //Open statedata file
     ifstream MyFile3("StatesData.txt");
     string temp2;
     vector<string> state2;
@@ -60,7 +61,8 @@ int main() {
     vector<string> violentrate;
     vector<string> nonviolent;
     vector<string> nonviolentrate;
-    while (getline(MyFile3, temp2, ',')) {
+
+    while (getline(MyFile3, temp2, ',')) {//getting each like on data and saving into separate variables
         state2.push_back(temp2);
         getline(MyFile3, temp2, ',');
         population.push_back(temp2);
@@ -80,6 +82,7 @@ int main() {
     }
 
     MyFile3.close();
+
     //read demographics file
     string s;
     vector<string> demoStates;
@@ -87,8 +90,8 @@ int main() {
     vector<vector<string>> demographics;
 
 
-    ifstream readDemoFile("/Users/nivedhanatarajan/CLionProjects/Login/demographics.txt");
-    while(getline(readDemoFile, s, ',')){
+    ifstream readDemoFile("demographics.txt");
+    while(getline(readDemoFile, s, ',')){//getting each like on data and saving into separate variables
         demoStates.push_back(s);
         getline(readDemoFile, s, ',');
         threeDemos.push_back(s);
@@ -105,7 +108,7 @@ int main() {
     vector<string> timeStates;
     vector<string> startTime;
     vector<string> endTime;
-    while (getline(timeSpan, temp3, ','))
+    while (getline(timeSpan, temp3, ','))//getting each like on data and saving into separate variables
     {
         timeStates.push_back(temp3);
         getline(timeSpan, temp3, ',');
@@ -117,7 +120,7 @@ int main() {
 
     //reading the file saved with all users' usernames and passwords from all previous runs
     ifstream readLoginFile("userLoginInformation.txt");
-    while(getline(readLoginFile, userName, ','))
+    while(getline(readLoginFile, userName, ','))//getting each like on data and saving into separate variables
     {
         getline(readLoginFile, passWord);
         pairs.push_back(userName);
@@ -263,8 +266,8 @@ int main() {
         cout << "7. Exit/Log Out " << endl;
         cin>> menuOption;
 
-        //statistics
-        if(menuOption==1)
+        //Statistics
+        if(menuOption==1)//provides the crime rates for each state in alphabetical order
         {
             cout<< setw(14) << "State" << setw(16) << "Crime Rate %\n";
             cout<<"------------------------------\n";
@@ -276,7 +279,7 @@ int main() {
         }
 
         //Crime
-        if(menuOption==2)
+        if(menuOption==2)//prints the top three crime types for each state in alphabetical order
         {
             cout<< setw(14) << "State" << setw(32) << "Top 3 Crime Types\n";
             cout<<"----------------------------------------------------------\n";
@@ -288,7 +291,7 @@ int main() {
         }
 
         //Demographics
-        if(menuOption==3)
+        if(menuOption==3)//provides the typical age, gender, and ethnicity that are victims of crime in the selected state
         {
             int choice = 0;
             string stateChoice;
@@ -324,7 +327,7 @@ int main() {
         }
 
         //Time
-        if(menuOption==4)
+        if(menuOption==4)//prints the time intervals that crime usually occurs in selected state by the user
         {
             string stateInput;
             cout << "Please enter the state you wish to find out about the most common time intervals of crime occurences:\n";
@@ -342,15 +345,13 @@ int main() {
         }
 
         //State
-        if(menuOption==5)
+        if(menuOption==5)//provided the rank state by highest crime rate and gives report of state general information
         {
-            
+
 
             cout << "Please choose a command: " << endl;
             cout << " 1 - Search report on State " << endl;
             cout << " 2 - Rank State by highest crime rate " << endl;
-            cout << " 3 - Rank State by highest violent crime rate " << endl;
-            cout << " 4 - Rank State by highest nonviolent crime rate " << endl;
 
 
             cout << " 0 - Back to main menu " << endl;
@@ -358,13 +359,13 @@ int main() {
             int statemenu;
             cin >> statemenu;
 
-            if (statemenu < 0 || statemenu > 4) {
+            if (statemenu < 0 || statemenu > 2) {//doesn't allow user if the input is incorrect(displays invalid)
                 cout << "Invalid command" << endl;
                 cout << endl;
                 continue;
             }
 
-            if (statemenu == 1) {
+            if (statemenu == 1) {// displays general information of crime state
 
                 string state3;
                 cout << "Enter a State: " << endl;
@@ -380,7 +381,7 @@ int main() {
 
                 }
 
-            } else if (statemenu == 2) {
+            } else if (statemenu == 2) {//ranks the state by highest crime rate
                 // search by location
 
                 cout << "States ranking of highest crime rate: " << endl;
@@ -390,24 +391,12 @@ int main() {
                 cout << endl;
 
 
-            } else if (statemenu == 3) {
-                cout << "States ranking of highest violent crime rate: " << endl;
-                for (int i = 0; i < 50; i++) {
-                    cout << i + 1 << ". " << state2[i] << ", " << violentrate[i] << "\n";
-                }
-                cout << endl;
-            } else if (statemenu == 4) {
-                cout << "States ranking of highest nonviolent crime rate: " << endl;
-                for (int i = 0; i < 50; i++) {
-                    cout << i + 1 << ". " << state2[i] << ", " << nonviolentrate[i] << "\n";
-                }
-                cout << endl;
             }
 
-        
+
         }
 
-        if(menuOption==6)
+        if(menuOption==6)//if user wants to log out of account
         {
             cout<<"User logged out successfully!!!\n";
             cout<<"Username: "<<endl;
