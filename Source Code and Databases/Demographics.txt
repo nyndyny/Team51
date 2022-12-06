@@ -1,0 +1,50 @@
+Alabama, 16-24, Males, Black or African-American
+Alaska, 35-44, Males, American Indian or Alaskan Native
+Arizona, 25-34, Females, Black or African-American
+Arkansas, 35-44, Males, Asian
+California, 16-24, Females, Asian
+Colorado, 25-34, Females, Asian
+Connecticut, 45-54, Females, Black or African-American
+Delaware, 45-54, Females, American Indian or Alaskan Native
+Florida, 25-34, Males, Black or African-American
+Georgia, 25-34, Males, American Indian or Alaskan Native
+Hawaii, 35-44, Females, American Indian or Alaskan Native
+Idaho, 35-44, Females, Black or African-American
+Illinois, 35-44, Females, Black or African-American
+Indiana, 45-54, Females, Black or African-American
+Iowa, 35-44, Males, Asian
+Kansas, 25-34, Females, Black or African-American
+Kentucky, 35-44, Females, Asian
+Louisiana, 45-54, Males, Black or African-American
+Maine, 25-34, Females, Asian
+Maryland, 35-44, Females, Black or African-American
+Massachusetts, 45-54,Females, Black or African-American
+Michigan, 16-24, Males, American Indian or Alaskan Native
+Minnesota, 35-44, Males, Black or African-American
+Mississippi, 25-34,Females, Asian
+Missouri, 25-34, Males, Native Hawaiian or other Pacific Islander
+Montana, 25-34, Females, Asian
+Nebraska, 55-64, Females, Black or African-American
+Nevada, 35-44, Males, American Indian or Alaskan Native
+New Hampshire, 25-34,Females, Black or African-American
+New Jersey, 25-34, Males, Black or African-American
+New Mexico, 35-44, Females, Black or African-American
+New York, 25-34, Females, Asian
+North Carolina, 25-34, Females, American Indian or Alaskan Native
+North Dakota, 25-34, Males, Native Hawaiian or other Pacific Islander
+Ohio, 25-34, Males, American Indian or Alaskan Native
+Oklahoma, 35-44, Males, Black or African-American
+Oregon, 55-64, Males, Asian, Black or African-American
+Pennsylvania, 25-34, Males, Native Hawaiian or other Pacific Islander
+Rhode Island, 45-54, Males, American Indian or Alaskan Native
+South Carolina, 25-34, Females, Asian
+South Dakota, 55-64, Males, American Indian or Alaskan Native
+Tennessee, 35-44, Females, American Indian or Alaskan Native
+Texas, 25-34, Females, Hispanic or Latinx
+Utah, 55-64, Males, Black or African-American
+Vermont, 35-44, Females, Asian
+Virginia, 45-54, Females, Asian
+Washington, 25-34, Females, Asian
+West Virginia, 55-64, Females, Black or African-American
+Wisconsin, 55-64, Females, Black or African-American
+Wyoming, 45-54, Females, Hispanic or Latinx
