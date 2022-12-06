@@ -390,19 +390,8 @@ int main() {
                 cout << endl;
 
 
-            } else if (statemenu == 3) {
-                cout << "States ranking of highest violent crime rate: " << endl;
-                for (int i = 0; i < 50; i++) {
-                    cout << i + 1 << ". " << state2[i] << ", " << violentrate[i] << "\n";
-                }
-                cout << endl;
-            } else if (statemenu == 4) {
-                cout << "States ranking of highest nonviolent crime rate: " << endl;
-                for (int i = 0; i < 50; i++) {
-                    cout << i + 1 << ". " << state2[i] << ", " << nonviolentrate[i] << "\n";
-                }
-                cout << endl;
-            }
+            } 
+            
 
         
         }
