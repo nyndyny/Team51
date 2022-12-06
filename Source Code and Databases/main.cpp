@@ -90,7 +90,7 @@ int main() {
     vector<vector<string>> demographics;
 
 
-    ifstream readDemoFile("demographics.txt");
+    ifstream readDemoFile("Demographics.txt");
     while(getline(readDemoFile, s, ',')){//getting each like on data and saving into separate variables
         demoStates.push_back(s);
         getline(readDemoFile, s, ',');
@@ -103,7 +103,7 @@ int main() {
     }
 
     //read time file
-    ifstream timeSpan("/Users/sajani.panchal/CLionProjects/CrimeFighters/Time.txt");
+    ifstream timeSpan("Time.txt");
     string temp3;
     vector<string> timeStates;
     vector<string> startTime;
@@ -264,6 +264,7 @@ int main() {
         cout << "5. State " << endl;
         cout << "6. Re-login" << endl;
         cout << "7. Exit/Log Out " << endl;
+        cout << "Pick an option: ";
         cin>> menuOption;
 
         //Statistics
