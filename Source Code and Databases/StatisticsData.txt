@@ -1,0 +1,50 @@
+Alabama,23
+Alaska,14
+Arizona,34
+Arkansas,12
+California,37
+Colorado,26
+Connecticut,19
+Delaware,16
+Florida,42
+Georgia,29
+Hawaii,32
+Idaho,21
+Illinois,27
+Indiana,33
+Iowa,11
+Kansas,23
+Kentucky,26
+Louisiana,15
+Maine,28
+Maryland,22
+Massachusetts,18
+Michigan,31
+Minnesota,20
+Mississippi,13
+Missouri,17
+Montana,9
+Nebraska,23
+Nevada,29
+New Hampshire,39
+New Jersey,28
+New Mexico,26
+New York,34
+North Carolina,19
+North Dakota,45
+Ohio,47
+Oklahoma,12
+Oregon,29
+Pennsylvania,21
+Rhode Island,17
+South Carolina,25
+South Dakota,23
+Tennessee,31
+Texas,49
+Utah,29
+Vermont,11
+Virginia,21
+Washington,20
+West Virginia,33
+Wisconsin,24
+Wyoming,17

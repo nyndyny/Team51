@@ -1,0 +1,50 @@
+Alabama,Theft,Assualt,Violent-Crime
+Alaska,Theft,Burglary,Property-Crime
+Arizona,Violent-Crime,Property-Crime,Theft
+Arkansas,Theft,Violent-Crime,Sex-Offense
+California,Violent-Crime,Homicide,Burglary
+Colorado,Theft,Burglary,Sex-Offense
+Connecticut,Theft,Sex-Offense,Assualt
+Delaware,Property-Crime,Violent-Crime,Homicide
+Florida,Violent-Crime,Sex-Offense,Property-Crime
+Georgia,Burglary,Homicide,Property-Crime
+Hawaii,Homicide,Theft,Burglary
+Idaho,Violent-Crime,Sex-Offense,Property-Crime
+Illinois,Property-Crime,Assualt,Violent-Crime
+Indiana,Assualt,Theft,Violent-Crime
+Iowa,Theft,Homicide,Burglary
+Kansas,Property-Crime,Homicide,Violent-Crime
+Kentucky,Violent-Crime,Burglary,Assualt
+Louisiana,Sex-Offense,Violent-Crime,Burglary
+Maine,Theft,Homicide,Burglary
+Maryland,Assualt,Property-Crime,Violent-Crime
+Massachusetts,Property-Crime,Theft,Violent-Crime
+Michigan,Homicide,Violent-Crime,Theft
+Minnesota,Theft,Property-Crime,Violent-Crime
+Mississippi,Assualt,Violent-Crime,Property-Crime
+Missouri,Property-Crime,Burglary,Sex-Offense
+Montana,Burglary,Violent-Crime,Homicide
+Nebraska,Theft,Sex-Offense,Violent-Crime
+Nevada,Violent-Crime,Assualt,Property-Crime
+New Hampshire,Violent-Crime,Theft,Burglary
+New Jersey,Theft,Property-Crime,Burglary
+New Mexico,Violent-Crime,Theft,Property-Crime
+New York,Burglary,Property-Crime,Sex-Offense
+North Carolina,Homicide,Violent-Crime,Burglary
+North Dakota,Property-Crime,Sex-Offense,Violent-Crime
+Ohio,Burglary,Theft,Sex-Offense
+Oklahoma,Theft,Assualt,Burglary
+Oregon,Burglary,Property-Crime,Assualt
+Pennsylvania,Assualt,Violent-Crime,Homicide
+Rhode Island,Property-Crime,Theft,Assault
+South Carolina,Violent-Crime,Theft,Sex-Offense
+South Dakota,Theft,Burglary,Violent-Crime
+Tennessee,Property-Crime,Assualt,Burglary
+Texas,Violent-Crime,Burglary,Theft
+Utah,Theft,Burglary,Homicide
+Vermont,Violent-Crime,Theft,Sex-Offense
+Virginia,Assualt,Theft,Burglary
+Washington,Property-Crime,Sex-Offense,Violent-Crime
+West Virginia,Homicide,Assualt,Theft
+Wisconsin,Burglary,Theft,Property-Crime
+Wyoming,Violent-Crime,Property-Crime,Homicide
