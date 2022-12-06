@@ -49,7 +49,37 @@ int main() {
     }
 
     MyFile2.close();
+//Open statedata file
+    ifstream MyFile3("StatesData.txt");
+    string temp2;
+    vector<string> state2;
+    vector<string> population;
+    vector<string> reported;
+    vector<string> rate;
+    vector<string> violent;
+    vector<string> violentrate;
+    vector<string> nonviolent;
+    vector<string> nonviolentrate;
+    while (getline(MyFile3, temp2, ',')) {
+        state2.push_back(temp2);
+        getline(MyFile3, temp2, ',');
+        population.push_back(temp2);
+        getline(MyFile3, temp2, ',');
+        reported.push_back(temp2);
+        getline(MyFile3, temp2, ',');
+        rate.push_back(temp2);
+        getline(MyFile3, temp2, ',');
+        violent.push_back(temp2);
+        getline(MyFile3, temp2, ',');
+        violentrate.push_back(temp2);
+        getline(MyFile3, temp2, ',');
+        nonviolent.push_back(temp2);
+        getline(MyFile3, temp2);
+        nonviolentrate.push_back(temp2);
 
+    }
+
+    MyFile3.close();
     //read demographics file
     string s;
     vector<string> demoStates;
@@ -314,7 +344,67 @@ int main() {
         //State
         if(menuOption==5)
         {
-            cout<<"Work in Progress for State\n";
+            
+
+            cout << "Please choose a command: " << endl;
+            cout << " 1 - Search report on State " << endl;
+            cout << " 2 - Rank State by highest crime rate " << endl;
+            cout << " 3 - Rank State by highest violent crime rate " << endl;
+            cout << " 4 - Rank State by highest nonviolent crime rate " << endl;
+
+
+            cout << " 0 - Back to main menu " << endl;
+            cout << endl;
+            int statemenu;
+            cin >> statemenu;
+
+            if (statemenu < 0 || statemenu > 4) {
+                cout << "Invalid command" << endl;
+                cout << endl;
+                continue;
+            }
+
+            if (statemenu == 1) {
+
+                string state3;
+                cout << "Enter a State: " << endl;
+                cin >> state3;
+                for (int i = 0; i < 50; i++) {
+
+                    if (state2.at(i) == state3) {
+                        cout << state2[i] << endl << "Population: " << population[i] << " Total Reports: "
+                             << reported[i] << endl << "Rate: " << rate[i] << " Violent Reports: " << violent[i] << endl
+                             << "Non-Violent Reports: " << nonviolent[i] << " Non-Violent Rates: " << nonviolentrate[i]
+                             << endl;
+                    }
+
+                }
+
+            } else if (statemenu == 2) {
+                // search by location
+
+                cout << "States ranking of highest crime rate: " << endl;
+                for (int i = 0; i < 50; i++) {
+                    cout << i + 1 << ". " << state2[i]<< ": " << rate[i] << endl;
+                }
+                cout << endl;
+
+
+            } else if (statemenu == 3) {
+                cout << "States ranking of highest violent crime rate: " << endl;
+                for (int i = 0; i < 50; i++) {
+                    cout << i + 1 << ". " << state2[i] << ", " << violentrate[i] << "\n";
+                }
+                cout << endl;
+            } else if (statemenu == 4) {
+                cout << "States ranking of highest nonviolent crime rate: " << endl;
+                for (int i = 0; i < 50; i++) {
+                    cout << i + 1 << ". " << state2[i] << ", " << nonviolentrate[i] << "\n";
+                }
+                cout << endl;
+            }
+
+        
         }
 
         if(menuOption==6)
